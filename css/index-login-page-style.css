@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-priminary-bg: #0f162d;
+  --color-priminary-bg-one: #373155;
+  --color-priminary-bg-two: #2c3455;
+  --color-priminary-bg-three: #274255;
+  --color-priminary-bg-four: #3d413f;
+  --color-secendary-bg: #272d42;
+  --color-secendary: #ffffff;
+}
+
+body .sectionAI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-priminary-bg);
+  font-family: 'DM Sans', sans-serif;
+}
+
+body .sectionAI .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 24px;
+  padding: 48px 13px 64px 16px;
+  color: var(--color-secendary);
+}
+
+body .sectionAI .container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 16px;
+}
+
+body .sectionAI .container .description .description-header h2 {
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+body .sectionAI .container .description .description-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+body .sectionAI .container .tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 16px;
+  width: 100%;
+  margin: 0;
+}
+
+body .sectionAI .container .tiles .tile {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+  min-height: 196px;
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 20px;
+  background-color: var(--color-secendary-bg);
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 96px;
+  min-width: 167px;
+  margin-top: 20px;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico {
+  height: 56px;
+  width: 56px;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--pics-props {
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--one {
+  background-color: var(--color-priminary-bg-one);
+  background-image: url("./img/3d-sphere.svg");
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--two {
+  background-color: var(--color-priminary-bg-two);
+  background-image: url("./img/vr-user-glasses.svg");
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--three {
+  background-image: url("./img/technology-circle-objects.svg");
+  background-color: var(--color-priminary-bg-three);
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile__ico--four {
+  background-color: var(--color-priminary-bg-four);
+  background-image: url("./img/ai-artificial-intelligence-chip.svg");
+}
+
+body .sectionAI .container .tiles .tile .top-of-tile .tile-header {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+body .sectionAI .container .tiles .tile .tile-text {
+  width: 303px;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+body .sectionAI .container .tiles .tile .tile-text .title-paragraf {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.002em;
+  opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  body .sectionAI .container {
+    max-width: 496px;
+    margin: auto;
+    padding: 0;
+  }
+  body .sectionAI .container .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .sectionAI .container .description .description-header {
+    min-width: 490px;
+    height: 112px;
+    line-height: 56px;
+  }
+  body .sectionAI .container .description .description-header h2 {
+    line-height: 56px;
+    font-size: 48px;
+    letter-spacing: 0.45px;
+  }
+  body .sectionAI .container .description .description-header .description-paragraph {
+    width: 100%;
+    line-height: 24px;
+  }
+  body .sectionAI .container .tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 16px;
+    min-width: 496px;
+  }
+  body .sectionAI .container .tiles .tile {
+    width: 240px;
+    height: 218px;
+    border-radius: 20px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text {
+    width: 209px;
+    height: 66px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text .title-paragraf {
+    opacity: 0.5;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .sectionAI .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 109px;
+    max-width: 1200px;
+  }
+  body .sectionAI .container .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 24px;
+    max-width: 467px;
+  }
+  body .sectionAI .container .description .description-header {
+    height: 112px;
+    line-height: 56px;
+  }
+  body .sectionAI .container .description .description-header h2 {
+    font-size: 48px;
+    letter-spacing: 0.45px;
+  }
+  body .sectionAI .container .description .description-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .sectionAI .container .tiles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    gap: 24px;
+    max-width: 562px;
+    height: 511px;
+  }
+  body .sectionAI .container .tiles .tile {
+    width: 268px;
+    height: 240px;
+    gap: 16px;
+  }
+  body .sectionAI .container .tiles .tile .top-of-tile {
+    min-height: 104px;
+    margin-top: 24px;
+  }
+  body .sectionAI .container .tiles .tile .top-of-tile__ico {
+    height: 64px;
+    width: 64px;
+  }
+  body .sectionAI .container .tiles .tile .top-of-tile__ico--pics-props {
+    height: 100%;
+    background-size: 32px 32px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text {
+    width: 236px;
+    height: 72px;
+    margin-bottom: 24px;
+  }
+  body .sectionAI .container .tiles .tile .tile-text .title-paragraf {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/*# sourceMappingURL=index-login-page-style.css.map */
